@@ -181,15 +181,16 @@ if(r==null)r=null
 s=r}r=A.awF(A.apf(B.At,s==null?"auto":s))
 return new A.ah(r,new A.a99(),A.aa(r).h("ah<1,q>"))},
 avO(a,b){return b+a},
-Q_(){var s=0,r=A.W(t.e),q,p
+Q_(){var s=0,r=A.W(t.e),q,p,o
 var $async$Q_=A.X(function(a,b){if(a===1)return A.T(b,r)
 while(true)switch(s){case 0:s=3
 return A.S(A.a9p(A.au9()),$async$Q_)
-case 3:s=4
-return A.S(A.f5(self.window.CanvasKitInit({locateFile:A.aV(A.auz())}),t.e),$async$Q_)
-case 4:p=b
-if(A.ahi(p.ParagraphBuilder)&&!A.ajC())throw A.d(A.bH("The CanvasKit variant you are using only works on Chromium browsers. Please use a different CanvasKit variant, or use a Chromium browser."))
-q=p
+case 3:p=t.e
+s=4
+return A.S(A.f5(self.window.CanvasKitInit(p.a({locateFile:A.aV(A.auz())})),p),$async$Q_)
+case 4:o=b
+if(A.ahi(o.ParagraphBuilder)&&!A.ajC())throw A.d(A.bH("The CanvasKit variant you are using only works on Chromium browsers. Please use a different CanvasKit variant, or use a Chromium browser."))
+q=o
 s=1
 break
 case 1:return A.U(q,r)}})
@@ -409,7 +410,7 @@ r=$.ahx=new A.H8(new A.ib(s),Math.max(p,1),q,r)
 p=r}return p},
 anZ(a,b){var s,r,q
 t.S3.a(a)
-s={}
+s=t.e.a({})
 r=A.adx(a.a,a.b)
 s.fontFamilies=r
 s.heightMultiplier=a.d
@@ -426,7 +427,7 @@ s.forceStrutHeight=a.w
 s.strutEnabled=!0
 return s},
 abt(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1){return new A.ro(b,c,d,e,f,m,k,a0,g,h,j,q,a1,o,p,r,a,n,s,i,l)},
-aec(a,b){var s={}
+aec(a,b){var s=t.e.a({})
 if(a!=null)s.weight=$.amm()[a.a]
 return s},
 adx(a,b){var s=A.a([],t.s)
@@ -21934,8 +21935,8 @@ return A.S(q.b.$0(),$async$lz)
 case 3:return A.U(null,r)}})
 return A.V($async$lz,r)},
 a4y(){var s=A.aV(new A.QG(this))
-return{initializeEngine:A.aV(new A.QH(this)),autoStart:s}},
-Xz(){return{runApp:A.aV(new A.QD(this))}}}
+return t.e.a({initializeEngine:A.aV(new A.QH(this)),autoStart:s})},
+Xz(){return t.e.a({runApp:A.aV(new A.QD(this))})}}
 A.QG.prototype={
 $0(){return A.ak3(new A.QF(this.a).$0(),t.e)},
 $S:44}
@@ -21944,7 +21945,7 @@ $0(){var s=0,r=A.W(t.e),q,p=this
 var $async$$0=A.X(function(a,b){if(a===1)return A.T(b,r)
 while(true)switch(s){case 0:s=3
 return A.S(p.a.lz(),$async$$0)
-case 3:q={}
+case 3:q=t.e.a({})
 s=1
 break
 case 1:return A.U(q,r)}})
@@ -21982,7 +21983,7 @@ Me(a,b){var s=0,r=A.W(t.H),q=this
 var $async$$2=A.X(function(c,d){if(c===1)return A.T(d,r)
 while(true)switch(s){case 0:s=2
 return A.S(q.a.b.$0(),$async$$2)
-case 2:A.agV(a,{})
+case 2:A.agV(a,t.e.a({}))
 return A.U(null,r)}})
 return A.V($async$$2,r)},
 $S:305}
@@ -22325,7 +22326,7 @@ $1(a){var s=$.bF
 s=(s==null?$.bF=A.dV(self.window.flutterConfiguration):s).b
 if(s==null)s=null
 else{s=s.canvasKitBaseUrl
-if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/bd986c5ed20a62dc34b7718c50abc782beae4c33/":s)+a},
+if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/a794cf2681c6c9fe7b260e0e84de96298dc9c18b/":s)+a},
 $S:125}
 A.a9o.prototype={
 $1(a){this.a.remove()
@@ -23575,25 +23576,25 @@ s.setFillType($.ab9()[0])
 return A.af2(s,B.aV)},
 IA(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,a0,a1,a2){var s=t.eQ
 return A.abt(s.a(a),b,c,d,e,f,g,h,i,j,k,l,m,s.a(n),o,p,q,r,a0,a1,a2)},
-Ix(a,b,c,d,e,f,g,h,i,j,k,l){var s,r,q={},p=$.amq()[j.a]
-q.textAlign=p
-if(k!=null)q.textDirection=$.amt()[k.a]
-if(h!=null)q.maxLines=h
-p=f!=null
-if(p)q.heightMultiplier=f
+Ix(a,b,c,d,e,f,g,h,i,j,k,l){var s,r,q=t.e,p=q.a({}),o=$.amq()[j.a]
+p.textAlign=o
+if(k!=null)p.textDirection=$.amt()[k.a]
+if(h!=null)p.maxLines=h
+o=f!=null
+if(o)p.heightMultiplier=f
 s=l==null
-if(!s)q.textHeightBehavior=$.amu()[0]
-if(a!=null)q.ellipsis=a
-if(i!=null)q.strutStyle=A.anZ(i,l)
-q.replaceTabCharacters=!0
-r={}
+if(!s)p.textHeightBehavior=$.amu()[0]
+if(a!=null)p.ellipsis=a
+if(i!=null)p.strutStyle=A.anZ(i,l)
+p.replaceTabCharacters=!0
+r=q.a({})
 if(e!=null||!1)r.fontStyle=A.aec(e,d)
 if(c!=null)A.ahm(r,c)
-if(p)A.aho(r,f)
+if(o)A.aho(r,f)
 A.ahl(r,A.adx(b,null))
-q.textStyle=r
-p=$.bc.aS().ParagraphStyle(q)
-return new A.Bi(p,b,c,f,e,d,s?null:l.c)},
+p.textStyle=r
+q=$.bc.aS().ParagraphStyle(p)
+return new A.Bi(q,b,c,f,e,d,s?null:l.c)},
 rV(a){var s,r,q=null
 t.m6.a(a)
 s=A.a([],t.AT)
@@ -23800,36 +23801,36 @@ q=s}return q},
 gfG(a){return this.f},
 ghv(a){return this.r}}
 A.RQ.prototype={
-$0(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this.a,f=g.a,e=g.b,d=g.c,c=g.d,b=g.e,a=g.f,a0=g.w,a1=g.z,a2=g.Q,a3=g.as,a4=g.at,a5=g.ch,a6=g.CW,a7=g.cx,a8=g.db,a9={}
+$0(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this.a,f=g.a,e=g.b,d=g.c,c=g.d,b=g.e,a=g.f,a0=g.w,a1=g.z,a2=g.Q,a3=g.as,a4=g.at,a5=g.ch,a6=g.CW,a7=g.cx,a8=g.db,a9=t.e,b0=a9.a({})
 if(a5!=null){s=A.qD(new A.O(a5.y))
-a9.backgroundColor=s}if(f!=null){s=A.qD(f)
-a9.color=s}if(e!=null){r=B.c.R($.bc.aS().NoDecoration)
+b0.backgroundColor=s}if(f!=null){s=A.qD(f)
+b0.color=s}if(e!=null){r=B.c.R($.bc.aS().NoDecoration)
 s=e.a
 if((s|1)===s)r=(r|B.c.R($.bc.aS().UnderlineDecoration))>>>0
 if((s|2)===s)r=(r|B.c.R($.bc.aS().OverlineDecoration))>>>0
 if((s|4)===s)r=(r|B.c.R($.bc.aS().LineThroughDecoration))>>>0
-a9.decoration=r}if(b!=null)a9.decorationThickness=b
+b0.decoration=r}if(b!=null)b0.decorationThickness=b
 if(d!=null){s=A.qD(d)
-a9.decorationColor=s}if(c!=null)a9.decorationStyle=$.ams()[c.a]
-if(a0!=null)a9.textBaseline=$.amr()[a0.a]
-if(a1!=null)A.ahm(a9,a1)
-if(a2!=null)a9.letterSpacing=a2
-if(a3!=null)a9.wordSpacing=a3
-if(a4!=null)A.aho(a9,a4)
+b0.decorationColor=s}if(c!=null)b0.decorationStyle=$.ams()[c.a]
+if(a0!=null)b0.textBaseline=$.amr()[a0.a]
+if(a1!=null)A.ahm(b0,a1)
+if(a2!=null)b0.letterSpacing=a2
+if(a3!=null)b0.wordSpacing=a3
+if(a4!=null)A.aho(b0,a4)
 switch(g.ax){case null:case void 0:break
-case B.v_:A.ahn(a9,!0)
+case B.v_:A.ahn(b0,!0)
 break
-case B.uZ:A.ahn(a9,!1)
+case B.uZ:A.ahn(b0,!1)
 break}q=g.dx
 if(q===$){p=A.adx(g.x,g.y)
 g.dx!==$&&A.aP()
 g.dx=p
-q=p}A.ahl(a9,q)
-if(a!=null||!1)a9.fontStyle=A.aec(a,g.r)
+q=p}A.ahl(b0,q)
+if(a!=null||!1)b0.fontStyle=A.aec(a,g.r)
 if(a6!=null){g=A.qD(new A.O(a6.y))
-a9.foregroundColor=g}if(a7!=null){o=A.a([],t.J)
+b0.foregroundColor=g}if(a7!=null){o=A.a([],t.J)
 for(g=a7.length,n=0;n<a7.length;a7.length===g||(0,A.H)(a7),++n){m=a7[n]
-l={}
+l=a9.a({})
 s=A.qD(m.a)
 l.color=s
 s=m.b
@@ -23839,12 +23840,12 @@ k[1]=s.b
 l.offset=k
 s=m.c
 l.blurRadius=s
-o.push(l)}a9.shadows=o}if(a8!=null){j=A.a([],t.J)
+o.push(l)}b0.shadows=o}if(a8!=null){j=A.a([],t.J)
 for(g=a8.length,n=0;n<a8.length;a8.length===g||(0,A.H)(a8),++n){i=a8[n]
-h={}
+h=a9.a({})
 h.axis=i.a
 h.value=i.b
-j.push(h)}a9.fontVariations=j}return $.bc.aS().TextStyle(a9)},
+j.push(h)}b0.fontVariations=j}return $.bc.aS().TextStyle(b0)},
 $S:44}
 A.Bh.prototype={
 gnH(a){return this.d},
@@ -27696,7 +27697,7 @@ s=1
 break}j=n.x
 j.d=null
 p=4
-m=new globalThis.window.ImageDecoder({type:n.a,data:n.b,premultiplyAlpha:"premultiply",colorSpaceConversion:"default",preferAnimation:!0})
+m=new globalThis.window.ImageDecoder(t.e.a({type:n.a,data:n.b,premultiplyAlpha:"premultiply",colorSpaceConversion:"default",preferAnimation:!0}))
 i=t.H
 s=7
 return A.S(A.f5(m.tracks.ready,i),$async$lf)
@@ -27734,7 +27735,7 @@ h=A
 s=4
 return A.S(p.lf(),$async$h0)
 case 4:s=3
-return A.S(h.f5(b.decode({frameIndex:p.r}),l),$async$h0)
+return A.S(h.f5(b.decode(l.a({frameIndex:p.r})),l),$async$h0)
 case 3:k=b.image
 j=p.r
 i=p.d
@@ -65637,7 +65638,7 @@ H(a){var s=null,r=0.35*A.be(a,s,t.w).w.a.a
 return A.i7(A.ca(B.P,A.a([A.bV(s,s,s,B.dn,s,s,s,s),A.dG(s,new A.lm("The surface of Titan is very icy and frigid...",s),s,s,s,r,20,s),new A.qF("assets/TitanBeginning.jpeg",new A.Fb("Before anything, Titan's freezing temperatures need to be addressed. How do we bring warmth?",new A.oS("Set up orbital mirrors to amplify sunlight.",!0,"Amazing choice! Harnessing the sun's energy through orbital mirrors, we can magnify sunlight and accelerate the warming process. Slowly, the thick icy crust begins to melt, revealing the potential underneath."),new A.oS("Trigger artificial volcanic eruptions.",!1,"Volcanic activity, while intriguing, is unpredictable. It could lead to catastrophic consequences. The sun, on the other hand, offers a steady, gradual warmth.")),s),A.dG(20,A.eW("Move on to solve problems and help Titan",A.cl().$2$color$fontSize(B.i,20)),s,s,s,r,s,s)],t.p),B.J),s)}}
 A.G7.prototype={
 H(a){var s=null,r=A.be(a,s,t.w).w.a.a
-return A.i7(A.ca(B.P,A.a([A.bV(s,s,s,B.dn,s,s,s,s),A.dG(s,new A.lm("Titan needs energy to address the needs of its newly arrived inhabitants",s),s,s,s,0.2*r,20,s),new A.qF("Titan2.png",new A.Fb("A thriving civilization needs energy. What should be our main power source?",new A.oS("Construct wind turbines across the landscape.",!1,"Wind, though present, is erratic. Reliability is essential, and sunlight, even if faint, provides consistency."),new A.oS("Deploy next-gen solar panels tailored for low light.",!0,"Perfect! Given Titan's distance from the Sun, conventional panels won't work. However, next-gen panels, designed for such environments, can efficiently capture and convert even the faintest sunlight into energy, setting the groundwork for our future endeavors.")),s),A.dG(20,A.eW("Move on to solve problems and help Titan",A.cl().$2$color$fontSize(B.i,20)),s,s,s,0.35*r,s,s)],t.p),B.J),s)}}
+return A.i7(A.ca(B.P,A.a([A.bV(s,s,s,B.dn,s,s,s,s),A.dG(s,new A.lm("Titan needs energy to address the needs of its newly arrived inhabitants",s),s,s,s,0.2*r,20,s),new A.qF("assets/Titan2.png",new A.Fb("A thriving civilization needs energy. What should be our main power source?",new A.oS("Construct wind turbines across the landscape.",!1,"Wind, though present, is erratic. Reliability is essential, and sunlight, even if faint, provides consistency."),new A.oS("Deploy next-gen solar panels tailored for low light.",!0,"Perfect! Given Titan's distance from the Sun, conventional panels won't work. However, next-gen panels, designed for such environments, can efficiently capture and convert even the faintest sunlight into energy, setting the groundwork for our future endeavors.")),s),A.dG(20,A.eW("Move on to solve problems and help Titan",A.cl().$2$color$fontSize(B.i,20)),s,s,s,0.35*r,s,s)],t.p),B.J),s)}}
 A.G5.prototype={
 H(a){var s=null
 return A.i7(A.ca(B.P,A.a([A.bV(s,s,s,B.dn,s,s,s,s),new A.zV(this.c,s)],t.p),B.J),s)}}
@@ -70707,8 +70708,8 @@ s($,"aAY","aew",()=>{var q="BlendMode"
 return A.a([A.A(A.A(A.a8(),q),"Clear"),A.A(A.A(A.a8(),q),"Src"),A.A(A.A(A.a8(),q),"Dst"),A.A(A.A(A.a8(),q),"SrcOver"),A.A(A.A(A.a8(),q),"DstOver"),A.A(A.A(A.a8(),q),"SrcIn"),A.A(A.A(A.a8(),q),"DstIn"),A.A(A.A(A.a8(),q),"SrcOut"),A.A(A.A(A.a8(),q),"DstOut"),A.A(A.A(A.a8(),q),"SrcATop"),A.A(A.A(A.a8(),q),"DstATop"),A.A(A.A(A.a8(),q),"Xor"),A.A(A.A(A.a8(),q),"Plus"),A.A(A.A(A.a8(),q),"Modulate"),A.A(A.A(A.a8(),q),"Screen"),A.A(A.A(A.a8(),q),"Overlay"),A.A(A.A(A.a8(),q),"Darken"),A.A(A.A(A.a8(),q),"Lighten"),A.A(A.A(A.a8(),q),"ColorDodge"),A.A(A.A(A.a8(),q),"ColorBurn"),A.A(A.A(A.a8(),q),"HardLight"),A.A(A.A(A.a8(),q),"SoftLight"),A.A(A.A(A.a8(),q),"Difference"),A.A(A.A(A.a8(),q),"Exclusion"),A.A(A.A(A.a8(),q),"Multiply"),A.A(A.A(A.a8(),q),"Hue"),A.A(A.A(A.a8(),q),"Saturation"),A.A(A.A(A.a8(),q),"Color"),A.A(A.A(A.a8(),q),"Luminosity")],t.J)})
 s($,"aBa","aey",()=>{var q="TileMode"
 return A.a([A.A(A.A(A.a8(),q),"Clamp"),A.A(A.A(A.a8(),q),"Repeat"),A.A(A.A(A.a8(),q),"Mirror"),A.A(A.A(A.a8(),q),"Decal")],t.J)})
-s($,"aAj","alS",()=>{var q="FilterMode",p="MipmapMode",o="Linear"
-return A.aQ([B.dC,{filter:A.A(A.A(A.a8(),q),"Nearest"),mipmap:A.A(A.A(A.a8(),p),"None")},B.co,{filter:A.A(A.A(A.a8(),q),o),mipmap:A.A(A.A(A.a8(),p),"None")},B.jy,{filter:A.A(A.A(A.a8(),q),o),mipmap:A.A(A.A(A.a8(),p),o)},B.jz,{B:A.afC(0.3333333333333333),C:A.afC(0.3333333333333333)}],A.a9("lJ"),t.e)})
+s($,"aAj","alS",()=>{var q="FilterMode",p="MipmapMode",o="Linear",n=t.e
+return A.aQ([B.dC,n.a({filter:A.A(A.A(A.a8(),q),"Nearest"),mipmap:A.A(A.A(A.a8(),p),"None")}),B.co,n.a({filter:A.A(A.A(A.a8(),q),o),mipmap:A.A(A.A(A.a8(),p),"None")}),B.jy,n.a({filter:A.A(A.A(A.a8(),q),o),mipmap:A.A(A.A(A.a8(),p),o)}),B.jz,n.a({B:A.afC(0.3333333333333333),C:A.afC(0.3333333333333333)})],A.a9("lJ"),n)})
 s($,"aAt","am0",()=>{var q=A.Eb(2)
 q[0]=0
 q[1]=1
@@ -70737,7 +70738,7 @@ s($,"aAo","alX",()=>A.aQ([B.jM,A.ajN("grapheme"),B.jN,A.ajN("word")],A.a9("tD"),
 s($,"aBj","amB",()=>A.ajQ())
 s($,"aBi","amA",()=>{var q=A.A(self.window,"trustedTypes")
 q.toString
-return A.au7(q,"createPolicy",A.asg("flutter-engine"),{createScriptURL:A.afT(new A.a9R())})})
+return A.au7(q,"createPolicy",A.asg("flutter-engine"),t.e.a({createScriptURL:A.afT(new A.a9R())}))})
 r($,"aBl","amD",()=>self.window.FinalizationRegistry!=null)
 s($,"aAl","alU",()=>B.G.br(A.aQ(["type","fontsChange"],t.N,t.z)))
 s($,"aBu","aeE",()=>{var q=A.ajO()
